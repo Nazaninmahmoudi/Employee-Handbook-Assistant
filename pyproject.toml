@@ -1,0 +1,51 @@
+[project]
+name = "hr-knowledge-assistant"
+version = "0.1.0"
+description = "Enterprise Hybrid RAG assistant for employee handbook question answering"
+readme = "README.md"
+
+authors = [
+    { name = "Nazanin Mahmoudi", email = "NazaninMahmoudy@gmail.com" }
+]
+
+requires-python = ">=3.11,<3.12"
+
+
+dependencies = [
+
+    "langchain>=0.3.0",
+    "langchain-core>=1.0.0",
+    "langchain-groq>=0.3.0",
+
+    "python-dotenv>=1.2.2",
+
+    "langchain-chroma>=1.1.0",
+    "chromadb>=1.5.9",
+
+    "langchain-huggingface>=1.2.2",
+    "sentence-transformers>=5.5.0",
+
+    "langchain-community>=0.4.1",
+    "langchain-text-splitters>=1.1.2",
+
+    "rank-bm25>=0.2.2",
+
+    "gradio>=6.24.0",
+
+    "torch",
+    "soundfile>=0.14.0",
+    "kokoro",
+
+    "pypdf>=6.11.0",
+    "datasets>=5.0.1",
+
+]
+
+
+[build-system]
+
+requires = [
+    "uv_build>=0.12.0,<0.13.0"
+]
+
+build-backend = "uv_build"
